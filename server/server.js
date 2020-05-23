@@ -9,9 +9,8 @@ app.get('/api/host', (req, res) => {
   res.send({ host : 'Kun'});
 });
 
-app.use(cors());
+// app.use(cors())
 
 app.listen(PORT, () => {
   console.log(`Server On : http://localhost:${PORT}/`);
 });
-
