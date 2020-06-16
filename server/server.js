@@ -1,16 +1,12 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
+const sequelize = require("./models").sequelize;
+sequelize.sync();
+
+app.use(express.json());
+
 const PORT = process.env.PORT || 4000;
-
-
-app.get('/api/host', (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.send({ host : 'Kun'});
-});
-
-// app.use(cors())
-
 app.listen(PORT, () => {
   console.log(`Server On : http://localhost:${PORT}/`);
 });

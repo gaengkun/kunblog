@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "gaengkun",
+    "password": "dnrodrksek21",
+    "database": "example_db",
+    "host": "kunblog.ciiia7jdvszn.us-east-2.rds.amazonaws.com",
+    "port": "3306",
+    "dialect": "mysql"
+  }
+}
